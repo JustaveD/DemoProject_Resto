@@ -1,0 +1,115 @@
+body{
+    padding: 2rem ;
+    background-color: var(--black);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+p{
+    font-size: 2rem;
+    text-align: center;
+    color:#fff;
+}
+p a{
+    color:var(--green);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem;
+    /* width: 30%; */
+    /* flex: 1 1rem; */
+}
+.container h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--green);
+}
+.container h4{
+    font-size: 2.3rem;
+    color: var(--light-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.container form{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    /* flex: 1 1 40rem; */
+    width: 90%;
+}
+.container form label{
+    font-size: 2.5rem;
+    color: var(--black)
+}
+.container form input{
+    font-size: 2.3rem;
+    display: inline-block;
+    border: .1rem solid var(--light-color);
+    border-radius: .5rem;
+    padding: .5rem 1rem ;
+    margin-bottom: .5rem;
+    color: var(--black);
+    font-weight: bold;
+    text-transform: none !important;
+    letter-spacing: .1rem;
+}
+.container form p{
+    padding: 1rem;
+    width: 80%;
+    word-wrap: break-word;
+    text-align: center;
+}
+.container p{
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    width: 70%;
+}
+.container .submit-btn{
+    background-color: var(--orange);
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.container form input:focus{
+    border-color: var(--green);
+    box-shadow: var(--box-shadow);
+}
+@media (max-width: 768px){
+    html{
+        font-size: 55%;
+    }
+    
+}
+
+
+input[type='file']::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  input[type='file']::before {
+    content: 'Image file';
+    display: inline-block;
+    background: linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+  }
+  input[type='file']:hover::before {
+    border-color: black;
+  }
+  input[type='file']:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+  }

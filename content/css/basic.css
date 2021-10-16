@@ -1,0 +1,205 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+/* Basic reset, setup */
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top:5.5rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 2rem 9%;
+}
+section:nth-child(even){
+    background-color: #eee;
+}
+.email--nomal{
+    text-transform: none;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    color:#fff;
+    background-color: var(--black);
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+}
+.btn:hover{
+    background-color: var(--green);
+    letter-spacing: .1rem;
+}
+
+.sub-heading{
+    text-align: center;
+    color: var(--green);
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+.heading{
+    text-align: center;
+    color: var(--black);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.tool-btn {
+    display: inline-block;
+    width:5rem;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    background-color: var(--orange);
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    
+}
+.tool-btn--calculator{
+    
+    background-color: var(--orange);
+    
+}
+.tool-btn--calculator:hover{
+    color: var(--green);
+}
+
+.section--padding-top{
+    padding-top: 10rem;
+}
+.tool-btn--long{
+    min-width: 100%;
+}
+.tool-btn--primary{
+    background-color: var(--green);
+}
+.tool-btn--margin-bottom{
+    margin-bottom: 1rem;
+}
+.tool-btn--opacity{
+    opacity: .9;
+}
+.tool-btn:hover{
+    opacity: 1;
+}
+@media (max-width:768px) {
+    .section--padding-top{
+        padding-top: 14rem;
+    }
+    .tool-btn{
+        flex:1 1 5rem;
+    }
+}
+
+.tool-btn--trash{
+    background-color: var(--light-color);
+}
+.tool-btn--trash:hover{
+    background-color: var(--black);
+}
+.tool-btn--trash i{
+    pointer-events: none;
+}
+.check-btn{
+    display: inline-block;
+    width:5rem;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+
+}
+.total-price{
+    width: 100%;
+    background-color: var(--black);
+    padding: 2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: right;
+    font-size: 2.8rem;
+    user-select: none;
+}
+
+#load_more{
+    display: inline-flex;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 10rem;
+    background-color: var(--green);
+    
+    color:#fff;
+    padding: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 2rem;
+    border-radius: 1rem;
+}
+#load_more:hover{
+    background-color: var(--black);
+}
+.fa-shopping-cart{
+    position: relative;
+}
+.fa-heart{
+    position: relative;
+}
+.cart-number{
+    position: absolute;
+    top:-.5rem;
+    right: -1rem;
+    background-color: var(--orange);
+    min-width: 2rem;
+    padding:.2rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-align: center;
+    z-index: 100000;
+    border-radius: 1rem;
+}
+.favorite-number{
+    position: absolute;
+    top:-.5rem;
+    right: -1rem;
+    background-color: var(--orange);
+    min-width: 2rem;
+    padding:.2rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-align: center;
+    z-index: 100000;
+    border-radius: 1rem;
+}
+
+
+.showError{
+    text-align: right;
+    color: #e63946;
+    font-size:1.4rem;
+}
+
+
+

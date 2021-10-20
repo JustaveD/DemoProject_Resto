@@ -98,6 +98,8 @@ if (isset($_GET['btn_process'])) {
                 extract($_GET);
                 extract($_POST);
 
+               
+                
                 $check = false;
                 $customers = customer_get_all();
                 foreach ($customers as $cus) {

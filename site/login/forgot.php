@@ -18,7 +18,7 @@
         <h4>Check mail for reset</h4>
         <form action="?btn_process=sendmail" method="post">
             <label >email</label>
-            <input type="email" placeholder="" name='cus_email'>
+            <input type="email" placeholder="" name='cus_email' required>
             <input type="submit" class="submit-btn" value = 'Send email'>
         </form>
         

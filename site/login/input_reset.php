@@ -19,7 +19,7 @@
         <h4>Enter your new password</h4>
         <form action="?btn_process=reset&token=<?=$token?>" method="post">
             <label >new password</label>
-            <input type="password" placeholder="" name='cus_password'>
+            <input type="password" placeholder="" name='cus_password' required>
             <input type="submit" class="submit-btn" value = 'Reset'>
         </form>
         
